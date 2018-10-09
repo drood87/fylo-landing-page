@@ -6,6 +6,8 @@
   
   <title>Frontend Mentor | Beta sign up split layout Challenge</title>
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700" rel="stylesheet">
 
 </head>
@@ -21,26 +23,47 @@
   <div class="right--column">
   
     <header>
-      <div class="fylo--logo"></div>
-      <h1>Fylo</h1>
+
+      <div class="company--logo">
+        <img src="./images/logo.svg">
+      </div>
 
       <div class="social--media">
-        <div class="twitter--logo"></div>
-        <div class="facebook--logo"></div>
-        <div class="mail--logo"></div>
+        <div class="twitter--logo">
+          <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+        <div class="facebook--logo">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+        </div>
+        <div class="mail--logo">
+          <a href="mailto:dbernstein1987@hotmail.com?Subject=Hello%20again"><i class="fas fa-envelope fa-2x"></i></a>
+        </div>
       </div>
+
     </header>
-  All your files in one secure location, accessible anywhere.
 
-  Fylo stores all your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family and co-workers.
+  <section>
+    <h1>All your files in one secure location, accessible anywhere.</h1>
+    
+    <div class="paragraphs">
+      <p>Fylo stores all your most important files in one secure location.</p> 
+      <p>Access them wherever you need, share and collaborate with<br /> friends, 
+        family and co-workers.</p>
+    </div>   
 
-  Sign up for early access
+    <form>
+       <label for="email">
+        <h3>Sign up for early access</h3>
+      </label>
+      <input type="email" name="email" id="email" required>
 
-  Sign Up
-
-  Privacy Policy
+      <button>Sign Up</button>
+    </form>
+    
+    
+    
+    Privacy Policy
+  </section>
 
     <footer>
       <p class="attribution">
