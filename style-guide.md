@@ -9,7 +9,7 @@
 
 ### Accent
 
-- hsl(163, 95%, 43%)
+
 
 ### Neutral
 
