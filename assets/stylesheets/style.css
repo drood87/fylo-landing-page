@@ -32,12 +32,44 @@ input {
 }
 
 /*=================================*/
+/*Flex the site                    */
+/*=================================*/
+
+.flex--wrapper {
+	display: flex;
+	min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+	.flex--wrapper {
+		display: inline-block;
+	}	
+}
+
+/*=================================*/
 /*Left Column styles               */
 /*=================================*/
 .left--column {
 	width: 45%;
-	float: left;
 }
+
+.mobile--design {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.left--column {
+		width: 100%;
+	}
+
+	.mobile--design {
+	display: flex;
+	justify-content: space-between;
+	padding: 5% 0 5% 5%;
+	width: 90%;
+	}
+}
+
 
 .illustration-main {
  background-image: url("../../images/illustration-main.svg");
@@ -45,13 +77,28 @@ input {
  background-repeat: no-repeat;
  position: relative;
  width: 100%;
- height: 100%;
+ height: 100vh;
 }
 
 .background {
 	background: linear-gradient(to left bottom, hsl(243, 87%, 12%), hsl(243, 86%, 85%));
-	height: 100vh;
+	min-height: 100%;
 }
+
+@media (max-width: 768px) {
+	.background {
+		background-image: url("../../images/bg-intro.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+	}	
+
+	.desktop--design {
+		display: none;
+	}
+}
+
+
 
 /*=================================*/
 /*Right Column styles              */
@@ -59,7 +106,6 @@ input {
 
 .right--column {
 	width: 55%;
-	margin-left: 45%;
 }
 .attribution { 
 	font-size: 11px; text-align: center; 
@@ -97,9 +143,13 @@ header {
 
 section {
 	text-align:left;
-	margin-top: 15%;
 	padding-left: 5%;
 	width: 90%;
+	margin-top: 10%;
+}
+
+@media (max-width: 768px) {
+
 }
 
 section h1 {
@@ -188,8 +238,9 @@ select:-webkit-autofill:focus {
 
 .policy {
 	text-align: end;
-	margin-top: 5%;
+	margin-top: 15%;
 }
+
 
 
 
