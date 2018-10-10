@@ -43,7 +43,7 @@ input {
 
 .flex--wrapper {
 	display: flex;
-	min-height: 100vh;
+	min-height: 100%;
 }
 
 
@@ -60,12 +60,9 @@ input {
 		background-repeat: no-repeat;
 		position: relative;
 		background-size: cover;
-		height: 810px;
+		height: 920px;
 	}
 
-	.flex--wrapper {
-
-	}
 }
 
 /*=================================*/
@@ -94,6 +91,7 @@ input {
 	padding: 5% 0 5% 5%;
 	width: 90%;
 	}
+
 }
 
 
