@@ -9,7 +9,7 @@
                  0px -5px 5px rgba(255,255,255,0.3);
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	* {
 		text-shadow: none;
 	}
@@ -52,7 +52,7 @@ input {
 	display: none;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	.background--wrapper--mobile {
 		display: block;
 		background-image: url("../../images/bg-intro.svg") ;
@@ -76,7 +76,7 @@ input {
 	display: none;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	.left--column--desktop {
 		display: none;
 	}
@@ -104,8 +104,13 @@ input {
  height: 100vh;
 }
 
+@media only screen and (max-width: 1041px) and (min-width: 768px) {
+	.illustration-main {
+		background-size: contain;
+	}
+}
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	.illustration--main--mobile {
 		height: 50%;
 		background-image: url("../../images/illustration-main.svg");
@@ -116,6 +121,8 @@ input {
 		margin-top: 10%;
 	}
 }
+
+
 
 .background {
 	background: linear-gradient(to left bottom, hsl(243, 87%, 12%), hsl(243, 86%, 85%));
@@ -131,7 +138,7 @@ input {
 	width: 55%;
 }
 
-@media (max-width: 768px) {
+@media only screen and  (max-width: 768px) {
 	.right--column {
 		width: auto;
 	}
@@ -163,6 +170,12 @@ header {
 	width: 50%;
 }
 
+@media only screen and (max-width: 1430px) and (min-width: 768px) {
+	.company--logo img {
+		width: 80%;
+	}
+}
+
 .social--media--desktop {
 	display: flex;
 	justify-content: space-between;
@@ -170,7 +183,7 @@ header {
 	width: 25%;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	.desktop--design {
 		display: none;
 	}
@@ -194,7 +207,8 @@ section {
 	margin-top: 10%;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+
 	section {
 		text-align: left;
 		padding: 0;
@@ -268,7 +282,7 @@ form > label > h3 {
 	height: 4em;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	.sign--email {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -309,7 +323,7 @@ select:-webkit-autofill:focus {
 	margin-top: 15%;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	.policy {
 		padding-bottom: 5%;
 	}
